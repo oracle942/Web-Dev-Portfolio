@@ -1,107 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800&display=swap');
 *{
-    font-family: 'montserrat', 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
-}
- 
- .container{
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    
-
-} 
-   
-nav{
-    display: flex;
-    min-width:100%;
-    height: 100px;
-    background-color: rgb(92, 207, 198);
-    border: 3px solid #333;
-    color: white;
-    
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav > h1{
-    font-size: 1.5em;
-    margin: 0%;
-    padding: 0%;
+header > h2{
+    cursor: pointer;
 }
 
-nav > ul {
-    font-size: 1.5em;
-    padding: 0%;
-    margin: 0%;
-    border: 3px solid crimson;
+
+.main{
+    position: absolute;
+    right: 0;
     width: 100%;
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
-    list-style-type: none;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
-  }
-
-nav > ul > li{
-    margin: 10px;
-    color: cornsilk;
-    text-decoration: none;
-   
+    background-color:#333;
+    color: #fff;
+    z-index: 2;
 }
+
+
 
 header{
-    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-width: 100%;
-    min-height: 200px;
-    background-color: rgb(68, 68, 160);
-    border: 3px solid #333;
-    color: white;
-    
+    justify-content: space-between;
 }
 
-.work-showcase{
-    display: flex;
-    min-width: 100%;
-    min-height: 700px;
-    background-color: rgb(179, 179, 179);
-    color: white;
-    border: 3px solid #333;
-    display: flex;
-    justify-content:center;
-    align-items: flex-start;
-    
+.about{
+    position: relative;
+    z-index: 5;
 }
 
-#example-1, 
-#example-2,
-#example-3,
-#example-4,
-#example-5,
-#example-6
-{
-    
-    margin: 10px;
-    width: 200px;
-    height: 100px;
-    background-color: rgb(0, 119, 255);
-    border: 3px solid #333;
-    color: white;
-    display: flex;
-}
-footer{
-    font-size: 1.5em;
-    font-weight: lighter;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    min-height: 200px;
-    background-color: rgb(68, 68, 160);
-    border: 3px solid #333;
-    color: white;
-
+.menu{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
 }
 
+.menu.open{
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.main video{
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+
+.social{
+    z-index: 5;
+}
+ul{
+    list-style-type: none;
+    cursor: pointer;
+}
