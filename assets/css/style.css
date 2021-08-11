@@ -6,10 +6,24 @@
     font-family: 'montserrat', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header > h2{
-    cursor: pointer;
+
+header{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+header h2{
+    cursor: pointer;
+    font-size: 1.5em;
+}
 
 .main{
     position: absolute;
@@ -25,44 +39,28 @@ header > h2{
     z-index: 2;
 }
 
-
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .about{
     position: relative;
     z-index: 5;
 }
 
-.menu{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
+.about h2{
+    font-size: 3em;
 }
 
-.menu.open{
-    background: url(https://i.ibb.co/rt3HybH/close.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
+.about h3{
+    font-size: 2em;
+    margin: 0 0 5% 0;
+}
+
+.about p{
+    font-size: 1.2em;
+    max-width: 700px;
+    
 }
 
 .main video{
+    z-index: -5;
     position: absolute;
     object-fit: cover;
     opacity: 0.8;
@@ -71,9 +69,76 @@ header{
 }
 
 .social{
+    /* position: absolute; */
+    /* bottom: 20px; */
     z-index: 5;
+    display: flex;
+    align-items: flex-end;
+}
+.social li{
+    margin-right: 20px;
 }
 ul{
     list-style-type: none;
     cursor: pointer;
+}
+
+.menu-items ul{
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    text-decoration: none;
+    display: flex;
+}
+ .menu-items ul li a{
+     text-decoration: none;
+     font-size: 24px;
+     color: white;
+     padding: 20px;
+     display: flex;
+}
+
+.menu-items ul li a:hover{
+    transform: translateY(-5px);
+    transition: .2s ease-in-out;
+}
+
+footer{
+    display: flex;
+    z-index: 5;
+    color: white;
+   
+    position: absolute;
+    width: 80%;
+    left: 100px;
+    
+    align-items: center;
+    /* height: 10%; */
+    bottom: 0;
+}
+footer h4{
+    font-weight: 100;
+    position: absolute;
+    left: 50%;
+    
+}
+
+@media (max-width: 1022px){
+    .menu-items ul{
+        top: 50%;
+        float: left;
+        display: flex;
+        left: 10%;
+        
+    }
+    .header h2{
+        display: flex;
+        
+    }
+    .social{
+        display: flex;
+        width: 100%;
+    }
 }
