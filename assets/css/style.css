@@ -47,9 +47,17 @@ a:hover{
 
 /* About section styling */
 .about{
+    width: 100%;
     position: relative;
     z-index: 5;
 }
+/* .about img{
+    position: relative;
+    left: 0;
+    width: 50%;
+    height: auto;
+
+} */
 
 .about h2{
     font-size: 3em;
