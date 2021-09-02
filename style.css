@@ -1,0 +1,70 @@
+
+*{
+    color: white;
+}
+video{
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -5;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+
+.content
+{
+    top: 25%;
+    left: 15%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.inner{
+    max-width: 50%;
+    font-size: large;
+}
+
+.btn{
+    color: white;
+}
+.btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #a7a7a7;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+.card1{
+    overflow: auto;
+    font-size: large;
+    opacity: .5;
+    /* width: 30%; */
+}
+
+.card1:hover {
+    opacity: 1;
+    transition: 1s ease;
+  }
+
+/* Sets footer position and styling */
+/* footer{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 5;
+    color: white;
+    width: 80%;
+    height: 100%;
+    left: 100px;
+   
+} */
