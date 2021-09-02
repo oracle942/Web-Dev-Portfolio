@@ -150,6 +150,64 @@ a{
 }
 
 /* Sets list item hover styling  */
+*{
+    color: white;
+}
+video{
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -5;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+
+.content
+{
+    top: 25%;
+    left: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.inner{
+    border: solid white ;
+    max-width: 50%;
+    font-size: large;
+}
+
+.btn{
+    color: white;
+}
+.btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #a7a7a7;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+/* Sets footer position and styling */
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    bottom: 0;
+    z-index: 5;
+    color: white;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: 100px;
+   
+}
  li:hover{
     transform: translateY(-5px);
     transition: .2s ease-in-out;
