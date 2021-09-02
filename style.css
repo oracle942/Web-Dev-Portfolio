@@ -36,7 +36,7 @@ video{
 .btn{
     color: white;
 }
-.btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn:hover {
     color: #fff;
     background-color: #a7a7a7;
     border-color: #285e8e; /*set the color you want here*/
@@ -52,6 +52,7 @@ video{
 .card1:hover {
     opacity: 1;
     transition: 1s ease;
+    cursor: pointer;
   }
 
 /* Sets footer position and styling */

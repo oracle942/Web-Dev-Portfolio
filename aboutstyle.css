@@ -1,0 +1,73 @@
+
+
+.bg{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.project-bg{
+    position: relative;
+    background-size: cover;
+}
+
+.headshot{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    opacity: .8;
+    margin-left: auto;
+    top: 200px
+}
+
+.showcase2{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 30%;
+    opacity: .8;
+    filter:grayscale(100%)
+    
+}
+.text{
+    position: absolute;
+    display: flex;
+}
+ /* .about{
+     top: 200px;
+     display: block;
+     min-height: 100vh;
+ } */
+
+ .blurb{
+    position: absolute;
+    font-size: larger;
+    top: 20%;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+}
+
+.headshot:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    filter: contrast(-50%);
+  }
+
+  .showcase2:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    filter: contrast(-50%);
+    filter:grayscale(0%);
+  }
+
+
+
+  /* .password{
+      position: absolute;
+  } */
