@@ -43,10 +43,13 @@ video{
 }
 
 .card1{
-    overflow: auto;
+    /* border: oldlace solid 2px; */
+    right:0%;
+    top: 20vh;
+    position: fixed;
     font-size: large;
     opacity: .5;
-    /* width: 30%; */
+    width: 30%;
 }
 
 .card1:hover {
@@ -55,17 +58,11 @@ video{
     cursor: pointer;
   }
 
-/* Sets footer position and styling */
-/* footer{
-    position: absolute;
-    bottom: 100px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    z-index: 5;
-    color: white;
-    width: 80%;
-    height: 100%;
-    left: 100px;
-   
-} */
+.stargazer{
+    position:relative;
+    width: 20vw;
+}
+
+.stargazer-header{
+    font-size: 1.5em;
+}
