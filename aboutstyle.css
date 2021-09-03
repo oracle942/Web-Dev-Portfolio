@@ -4,14 +4,22 @@
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
 
 }
-
-.project-bg{
-    position: relative;
-    background-size: cover;
+.main{
+    height: 200vh;
+    width: 100vw;
 }
+
+.navbar{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+
+
+
+
 
 .headshot{
     position: absolute;
@@ -24,9 +32,9 @@
 }
 
 .showcase2{
-    position: absolute;
+    position: relative;
     bottom: 0;
-    display: flex;
+    right: 0;
     width: 30%;
     opacity: .8;
     filter:grayscale(100%)
