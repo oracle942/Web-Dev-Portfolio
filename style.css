@@ -3,19 +3,19 @@
     color: white;
 } */
 video{
-    max-height: 100%;
-    max-width: 100%;
     z-index: -5;
-    /* position: relative; */
-    width: 100vw;
-    height: 100vh;
+    position: relative;
     object-fit: cover;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+
  
 }
 
 .main{
     position: absolute;
-    border: wheat solid 2px;
+    /* border: wheat solid 2px; */
     height: 200vh;
 }
 
@@ -26,12 +26,11 @@ video{
 
 .content
 {
-    top: 25%;
-    left: 15%;
+    /* border: wheat solid 2px; */
+    width: 68vw;
+    top: 15%;
+    left: 15vw;
     position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: transparent;
     transition: 0.5s;
     z-index: 2;
@@ -48,17 +47,23 @@ video{
 .btn:hover {
     color: #fff;
     background-color: #a7a7a7;
-    border-color: #285e8e; /*set the color you want here*/
+    border-color: #285e8e; 
 }
 
 .card1{
+    background-image: url('https://images.pexels.com/photos/42148/pexels-photo-42148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    border-radius: 20px;
     /* border: oldlace solid 2px; */
-    right:0%;
-    top: 20vh;
-    position: fixed;
+    top: 23vh;
+    right: 0;
+    position: absolute;
     font-size: large;
     opacity: .5;
-    width: 30%;
+    width: 25vw;
+    height: 50vh;
 }
 
 .card1:hover {
@@ -75,5 +80,10 @@ video{
 
 
 .stargazer-header{
+    position: absolute;
+    /* border:wheat solid 2px; */
     font-size: 1.5em;
+    width: 15vw;
+    right: 0;
+    top: 20vh;
 }
