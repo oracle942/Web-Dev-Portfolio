@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
-
+*{
+    font-family: 'Montserrat', sans-serif;}
 .bg{
     height: 100vh;
     background-repeat: no-repeat;
@@ -9,6 +11,7 @@
 .main{
     height: 100vh;
     width: 100vw;
+    border: wheat solid 2px;
 }
 
 .navbar{
@@ -24,6 +27,10 @@
     margin-left: auto;
     top: 200px
 }
+.weather h2,
+.password-generator h1{
+    font-size: 2em;
+}
 
 
 .password-generator{
@@ -38,7 +45,9 @@
 .clouds{
     position: relative;
     width: 30vw;
-    opacity: .8;
+    opacity: .7;
+    border-radius: 10px;;
+
 
 }
 
@@ -46,7 +55,8 @@
     position: relative;
     width: 30vw;
     opacity:.8;
-    filter:grayscale(100%)
+    filter:grayscale(100%);
+    border-radius: 10px;
 
 }
 
@@ -74,7 +84,37 @@
   }
 
 
+.about{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
 
-  /* .password{
-      position: absolute;
-  } */
+.headshot{
+    border-radius: 10px;
+    width: 30vw;
+    opacity: .7;
+    filter: grayscale(100%)
+}
+.headshot:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    filter:grayscale(40%);
+}
+
+.blurb{
+    font-size: 1.3em;
+}
+
+.contact-info{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.coming-soon{
+    position: absolute;
+    top: 35%;
+    Left: 20%;
+}
