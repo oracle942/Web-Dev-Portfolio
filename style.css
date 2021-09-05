@@ -1,16 +1,31 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+
 *{
-    box-sizing: border-box;}
-    
-    
-    video{
-        z-index: -5;
-        object-fit: cover;
-        height: 100vh;
-        position: fixed;
-        width: 100vw;
-    
-     
+    box-sizing: border-box;
+    font-family: montserrat;
+
+}
+html, body {
+    width: 100%;
+    padding:0;
+    margin:0;
     }
+.main{
+    position: absolute;
+    border: wheat solid 2px;
+    height: 200vh;
+    width: 100%;
+}
+
+    
+video{
+    z-index: -5;
+    object-fit: cover;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+}
     
     .span1 {
         color: #e6e6e6;
@@ -36,23 +51,19 @@
         letter-spacing: 5px;
     }
     
-    .main{
-        position: absolute;
-        /* border: wheat solid 2px; */
-        height: 200vh;
-        width: 100%;
-    }
-    
-    .navbar{
+   
+    .navbar-nav{
         z-index: 5;
     }
     
-    
+    .container{
+        /* border: white solid 2px; */
+    }
     .content
     {
         width: 68vw;
         top: 15%;
-        left: 15vw;
+        left: 8vw;
         position: absolute;
         background: transparent;
         transition: 0.5s;
@@ -60,7 +71,8 @@
     }
     
     .inner{
-        max-width: 50%;
+        /* border: white solid 2px; */
+        max-width: 70%;
         font-size: large;
     }
     
@@ -78,21 +90,19 @@
     .card1{
         position: absolute;
         /* border: rgb(194, 139, 36) solid 2px; */
-        top: 45vh;
+        top: 40vh;
         right: 10%;
         width: 20vw;
         height: 50vh;
     }
     
-    
-    
-    
-    .stargazer{
-        display: block;
+       
+     .stargazer{
+        display: contain;
         transition: 1s ease-in-out;
-        width: 300px;
         opacity: .5;
         top: 45vh;
+        width: 20%;
         border-radius: 10px;
     }
     
@@ -121,3 +131,23 @@
         height: 50vh;
     }
     
+    footer{
+        /* border: white solid 2px; */
+        background: transparent;
+        position: absolute;
+        bottom: -100%; 
+        width: 100vw;
+    }
+
+    footer h4{
+        font-weight: 100;
+        position: relative;
+        left: 47vw;
+    }
+
+    .bi{
+        /* border: white solid 2px; */
+        width: 200px;
+        height: 100px;
+    }
+
