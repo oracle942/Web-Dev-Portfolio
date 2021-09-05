@@ -122,3 +122,25 @@
     top: 35%;
     Left: 20%;
 }
+.contact-info{
+    /* border: white solid 2px; */
+    position: absolute;
+    top: 40vh;
+}
+.contacts{
+    color: white;
+    top: 200px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.contacts li{
+    font-size: 3em;
+    color: white;
+    transition: .7s ease-in-out;
+}
+.contacts li:hover{
+    transform: translateY(-20px);
+}
