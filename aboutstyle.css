@@ -11,7 +11,7 @@
 .main{
     height: 100vh;
     width: 100vw;
-    border: wheat solid 2px;
+    /* border: wheat solid 2px; */
 }
 
 .navbar{

@@ -1,10 +1,10 @@
 
-/* *{
-    color: white;
-} */
+*{
+box-sizing: border-box;}
+
+
 video{
     z-index: -5;
-    position: relative;
     object-fit: cover;
     height: 100vh;
     position: fixed;
@@ -13,10 +13,33 @@ video{
  
 }
 
+.span1 {
+    color: #e6e6e6;
+    transition: 1s;
+}
+
+.span2{
+    font-weight: bold;
+    color: #e6e6e6;
+    transition: 1s;
+}
+.span1:hover,
+.span2:hover{
+    transform: scale(1.05);
+    color: #b69121;
+}
+h2{
+    transition: .75s ease-in-out;
+}
+h2:hover{
+    letter-spacing: 5px;
+}
+
 .main{
     position: absolute;
     /* border: wheat solid 2px; */
     height: 200vh;
+    width: 100%;
 }
 
 .navbar{
@@ -26,7 +49,6 @@ video{
 
 .content
 {
-    /* border: wheat solid 2px; */
     width: 68vw;
     top: 15%;
     left: 15vw;
@@ -44,46 +66,57 @@ video{
 .btn{
     color: white;
 }
+
 .btn:hover {
     color: #fff;
-    background-color: #a7a7a7;
-    border-color: #285e8e; 
+    background-color: #5485a1;
+    transition: .7s;
 }
 
+
 .card1{
-    background-image: url('https://images.pexels.com/photos/42148/pexels-photo-42148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    border-radius: 20px;
-    /* border: oldlace solid 2px; */
-    top: 23vh;
-    right: 0;
     position: absolute;
-    font-size: large;
-    opacity: .5;
-    width: 25vw;
+    /* border: rgb(194, 139, 36) solid 2px; */
+    top: 45vh;
+    right: 10%;
+    width: 20vw;
     height: 50vh;
 }
 
-.card1:hover {
-    opacity: 1;
-    transition: 1s ease;
-    cursor: pointer;
-  }
+
+
 
 .stargazer{
-    position:relative;
-    width: 20vw;
-    border-radius: 20px;
+    display: block;
+    transition: 1s ease-in-out;
+    width: 300px;
+    opacity: .5;
+    top: 45vh;
+    border-radius: 10px;
 }
 
-
+.stargazer:hover,
+.stargazer:hover  + .stargazer-header {
+    font-size: 2em;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 .stargazer-header{
-    position: absolute;
+    z-index: 5;
+    color: #e6e6e6;
     /* border:wheat solid 2px; */
     font-size: 1.5em;
     width: 15vw;
-    right: 0;
-    top: 20vh;
+    right: 15%;
+    top: 42vh;
 }
+
+
+.stargazer-link{
+    position: absolute;
+    /* border: white solid 2px; */
+    width: 100vw;
+    height: 50vh;
+}
+
