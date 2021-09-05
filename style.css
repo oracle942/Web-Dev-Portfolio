@@ -28,6 +28,8 @@
         color: #b69121;
     }
     h2{
+        width: 80vw;
+        /* border: white solid 2px; */
         transition: .75s ease-in-out;
     }
     h2:hover{
