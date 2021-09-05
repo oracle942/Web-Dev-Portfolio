@@ -13,7 +13,7 @@ html, body {
     }
 .main{
     position: absolute;
-    border: wheat solid 2px;
+    /* border: wheat solid 2px; */
     height: 200vh;
     width: 100%;
 }
