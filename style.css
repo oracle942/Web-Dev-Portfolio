@@ -10,10 +10,10 @@ video{
     left: 0;
 }
 
-/* .main{
+.main{
     height: 100vh;
     width: 100vw;
-} */
+}
 
 .navbar{
     z-index: 5;
