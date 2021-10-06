@@ -96,7 +96,7 @@
 }
 
 .headshot{
-    border-radius: 10px;
+    border-radius: 50%;
     width: 30vw;
     opacity: .7;
     filter: grayscale(100%);
