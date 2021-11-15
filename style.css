@@ -49,6 +49,7 @@ h2:hover{
 }
 
 
+
 .navbar-nav{
     z-index: 5;
 }
@@ -69,13 +70,20 @@ h2:hover{
 }
 
 .inner{
+    display: block;
     /* border: white solid 2px; */
     max-width: 70%;
-    font-size: large;
+}
+
+.customers{
+    position: relative;
+    left: 8%;
 }
 
 .btn{
     color: white;
+    border:oldlace solid 1px;
+    margin-top: 20px;
 }
 
 .btn:hover {
