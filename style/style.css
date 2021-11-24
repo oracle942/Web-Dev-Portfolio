@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.svg-wrapper{
+  top: 5px;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-nav {
+  margin-top: 200px;
+  display: flex;
+}
+.nav-item {
+  margin-top: 20px;
+  display: block;
+}
+.nav-link {
+  position: relative;
+  float: right;
+}
+.navbar-brand {
+  display: none;
+  letter-spacing: 0.2rem;
+  position: relative;
+  left: 7px;
+}
+.navbar-brand-sm {
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 400;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2% 0 2%;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+video {
+  z-index: -5;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 85vh;
+  left: 0;
+  top: 15%;
+  position: absolute;
+  background: transparent;
+  z-index: 2;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.headline {
+  opacity: .6;
+  font-weight: 900;
+  transform: scale(1, 2);
+  -webkit-text-stroke-width: .01rem;
+  -webkit-text-stroke-color: grey;
+  background-image: url(https://media2.giphy.com/media/LAsvbjyumSIz67f40e/giphy.gif?cid=790b7611162c55cd7a291ac2db8b48979cfcfd3d26d684ff&rid=giphy.gif&ct=g);
+  filter: grayscale(100%);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	line-height: .75;
+	margin: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  transition: ease-in-out 1s;
+}
+
+.headline:hover {
+ filter: none;
+}
+
+.experience{
+  margin-top: 30px;
+  font-size: 26px;
+}
+
+@media (min-width: 360px) {
+  .headline{
+    font-size: 26px;
+  }
+}
+@media (min-width: 435px) {
+  .navbar-brand {
+    display: block;
+  }
+  .navbar-brand-sm {
+    display: none;
+}
+
+@media (min-width: 480px) {
+  .headline{
+    font-size: 36px;
+  }
+}
+@media (min-width: 620px) {
+  .experience{
+letter-spacing: 0.5rem;
+  }
+}
+}
+@media (min-width: 720px) {
+  .headline{
+    letter-spacing: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .navbar-nav {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1600px) {
+  .inner{
+    align-content: start;
+    margin: 0 4% 0 4%;
+  }
+}
+@media (min-width: 1900px) {
+ .headline{
+  font-size: 42px; 
+ }
+ .experience{
+   margin-top: 50px;
+ }
+}
