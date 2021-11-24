@@ -45,9 +45,9 @@
   transition: ease-in-out 0.7s;
   color: transparent;
 }
-.welcome:hover {
+/* .welcome:hover {
   text-shadow: 0 5px 5px white, 0 -2px 1px white;
   opacity: 0.3;
-}
+} */
 
 

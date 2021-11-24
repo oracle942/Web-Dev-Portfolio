@@ -100,14 +100,23 @@ video {
   transition: ease-in-out 1s;
 }
 
-.headline:hover {
- filter: none;
-}
-
 .experience{
   margin-top: 30px;
   font-size: 26px;
 }
+.headline-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+}
+.headline-wrapper:hover .headline{
+  filter: none;
+}
+
 
 @media (min-width: 360px) {
   .headline{
