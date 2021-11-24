@@ -12,7 +12,6 @@
     margin-left: 0;
     position: absolute;
     width: 100%;
-    /* border: orange solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,8 +24,6 @@
   .coming-soon {
     -webkit-text-stroke-width: 0.05rem;
     -webkit-text-stroke-color: #999999;
-    /* opacity: 0.5; */
-    /* text-shadow: 0 5px 9px #999999, 0 -2px 1px #999999; */
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 0.5rem;

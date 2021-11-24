@@ -15,7 +15,6 @@
 
 .projects{
     
-    /* border: 1px solid red; */
     position: absolute;
     left: 0;
     right: 0;
@@ -25,9 +24,11 @@
     align-items: center;
     z-index: 3;
 }
+.projects-header{
+    margin-bottom: 10%;
+}
 .project-row{
     display: flex;
-    /* border: white solid 1px; */
 }
 
 .pic{
@@ -74,3 +75,13 @@ justify-content: center;
 align-items: center;
 }
 
+@media (min-width: 1000px){
+    .projects-header{
+        margin-bottom: 5%;
+    }
+}
+@media (min-width: 1600px){
+    .projects-header{
+        margin-bottom: 0%;
+    }
+}
