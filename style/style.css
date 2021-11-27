@@ -10,10 +10,14 @@
   height: 100vh;
   width: 100vw;
 }
-.svg-wrapper{
+.svg-wrapper {
   top: 5px;
+  width: 315px;
 }
 
+#shape {
+  width: 315px;
+}
 .navbar {
   width: 100%;
   z-index: 10;
@@ -42,7 +46,7 @@
   font-size: x-large;
   font-weight: 400;
 }
-.navbar-container{
+.navbar-container {
   display: flex;
   justify-content: space-between;
   margin: 0 2% 0 2%;
@@ -81,26 +85,26 @@ video {
 }
 
 .headline {
-  opacity: .6;
+  opacity: 0.6;
   font-weight: 900;
   transform: scale(1, 2);
-  -webkit-text-stroke-width: .01rem;
+  -webkit-text-stroke-width: 0.01rem;
   -webkit-text-stroke-color: grey;
   background-image: url(https://media2.giphy.com/media/LAsvbjyumSIz67f40e/giphy.gif?cid=790b7611162c55cd7a291ac2db8b48979cfcfd3d26d684ff&rid=giphy.gif&ct=g);
   filter: grayscale(100%);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	line-height: .75;
-	margin: 10px 0;
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 0.75;
+  margin: 10px 0;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.2rem;
   transition: ease-in-out 1s;
 }
 
-.experience{
+.experience {
   margin-top: 30px;
   font-size: 26px;
 }
@@ -113,13 +117,12 @@ video {
   align-content: center;
   align-items: center;
 }
-.headline-wrapper:hover .headline{
+.headline-wrapper:hover .headline {
   filter: none;
 }
 
-
 @media (min-width: 360px) {
-  .headline{
+  .headline {
     font-size: 26px;
   }
 }
@@ -129,21 +132,21 @@ video {
   }
   .navbar-brand-sm {
     display: none;
-}
+  }
 
-@media (min-width: 480px) {
-  .headline{
-    font-size: 36px;
+  @media (min-width: 480px) {
+    .headline {
+      font-size: 36px;
+    }
   }
-}
-@media (min-width: 620px) {
-  .experience{
-letter-spacing: 0.5rem;
+  @media (min-width: 620px) {
+    .experience {
+      letter-spacing: 0.5rem;
+    }
   }
-}
 }
 @media (min-width: 720px) {
-  .headline{
+  .headline {
     letter-spacing: 1rem;
   }
 }
@@ -153,16 +156,16 @@ letter-spacing: 0.5rem;
   }
 }
 @media (min-width: 1600px) {
-  .inner{
+  .inner {
     align-content: start;
     margin: 0 4% 0 4%;
   }
 }
 @media (min-width: 1900px) {
- .headline{
-  font-size: 42px; 
- }
- .experience{
-   margin-top: 50px;
- }
+  .headline {
+    font-size: 42px;
+  }
+  .experience {
+    margin-top: 50px;
+  }
 }
