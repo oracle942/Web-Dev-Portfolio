@@ -1,4 +1,5 @@
 
+
 .data-video {
   filter: grayscale(100%);
   position: fixed;
@@ -39,7 +40,6 @@
 .services {
   /* border: white solid 1px; */
 margin-top: 30%;
-margin-bottom: 5%;
   letter-spacing: .8rem;
   text-justify: inter-word;
   text-align: center;
@@ -70,12 +70,25 @@ margin-bottom: 5%;
   background-blend-mode: overlay;
   margin-top: 20%;
   width: 100%;
-  border: white solid 1px;
+  /* border: white solid 1px; */
   padding-top: 10%;
   padding-bottom: 10%;
   position: relative;
   top: 50%;
   color: black;
+}
+.personal-section{
+  display: flex;
+  background-color: rgb(255, 255, 255, 0);
+  justify-content: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  /* border: white solid 1px; */
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative;
+  top: 50%;
+  color: white;
 }
 
 .be-services-section{
@@ -102,6 +115,7 @@ margin-bottom: 5%;
   justify-content: center;
   font-size: 5rem;
   opacity: 1;
+
 }
 .fe-blurb{
   margin-top: 5%;
@@ -121,11 +135,27 @@ margin-bottom: 5%;
   font-size: 2rem;
   font-weight: 500;
 }
+
+.personal-blurb{
+  font-size: 2rem;
+}
 .fe-tech{
   display: flex;
   justify-content: center;
   margin-top: 15%;
   font-size: 3.5rem;
+}
+
+.personal-pic{
+  float: right;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  opacity: .8;
+  transition: .3s ease-in-out;
+}
+
+.personal-pic:hover{
+  filter: grayscale(20%)
 }
 
 .pic0{
@@ -135,10 +165,6 @@ margin-bottom: 5%;
 max-width: 300px;}
 .pic1{
 max-width: 200px;}
-
-img{
-  /* border: black solid 1px; */
-}
 
 @media (min-width: 768px) {
   .fe-logos {
