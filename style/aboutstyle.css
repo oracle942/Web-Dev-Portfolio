@@ -110,6 +110,8 @@ margin-top: 30%;
   opacity: 1;
 }
 .fe-header{
+  text-justify: inter-word;
+  text-align: center;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -128,8 +130,8 @@ margin-top: 30%;
   /* border: black solid 1px; */
   margin-top: 5%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   text-justify: inter-word;
   text-align: justify;
   font-size: 2rem;
